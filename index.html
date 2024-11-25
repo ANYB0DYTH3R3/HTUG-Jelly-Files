@@ -3,46 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Page</title>
+    <title>Download Your Files</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
-            color: #333;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #4facfe, #00f2fe);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
+
         h1 {
-            color: #444;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
         .button-container {
-            margin: 20px 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
         }
+
         .download-button {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
-            font-size: 16px;
-            color: white;
-            background-color: #0078d7;
-            border: none;
-            border-radius: 5px;
             text-decoration: none;
-            cursor: pointer;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
+
         .download-button:hover {
-            background-color: #005a9e;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
     <h1>Download Your Files</h1>
-    <p>Click the buttons below to download the files you need.</p>
+    <p>Click the buttons below to get the files you need.</p>
     <div class="button-container">
         <!-- Button for File 1 -->
-        <a href="https://github.com/ANYB0DYTH3R3/HTUG-Jelly-Files/raw/refs/heads/main/HTUG%20-%20Jelly.apk" class="HTUG Jellyfin apk" download>HTUG Jellyfin apk</a>
+        <a href="https://github.com/ANYB0DYTH3R3/HTUG-Jelly-Files/raw/refs/heads/main/HTUG%20-%20Jelly.apk" class="download-button" download>Download HTUG Jelly </a>
         <!-- Button for File 2 -->
-        <a href="https://github.com/ANYB0DYTH3R3/HTUG-Jelly-Files/raw/refs/heads/main/Request%20HTUG.apk" class="HTUG Request apk" download>HTUG Request apk</a>
+        <a href="https://github.com/ANYB0DYTH3R3/HTUG-Jelly-Files/raw/refs/heads/main/Request%20HTUG.apk" class="download-button" download>Download HTUG Request </a>
     </div>
+    <footer>
+        &copy; 2024 HTUG. All rights reserved.
+    </footer>
 </body>
 </html>
